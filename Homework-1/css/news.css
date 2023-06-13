@@ -15,15 +15,16 @@
     margin-top: 4vw;
 }
 .paragraph{
-    font-family: 'FiraGO';
+    font-family: "BPG Nostalgia", sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 0.9vw;
     color: #4E6FAE;
+    display: inline-block;
+    margin-right: 7.22vw;
 }
 article{
     margin-left: 7.22vw;
-    width:70vw;
 }
 .month{
     font-family: 'FiraGO';
@@ -45,8 +46,15 @@ footer{
     margin-bottom: 6vw;
     margin-left: 7.22vw;
 }
+.miniflex{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 1vw;
+}
 .img{
-    margin-top:1vw;
     margin-bottom:1vw;
     width:30vw;
+    margin-right: 10vw;
+    min-width: 30vw;
 }
