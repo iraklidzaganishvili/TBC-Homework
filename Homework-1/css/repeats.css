@@ -1,0 +1,46 @@
+*{
+	margin: 0px;
+	box-sizing: border-box;
+}
+li{
+	list-style-type: none;
+	display: flex;
+}
+header{
+	margin-left: 7.22vw;
+	margin-top: 2vw;
+	margin-bottom: 1.97vw;
+	display: flex;
+	align-items: center;
+}
+.logo{
+	display: flex;
+	width: 15.48vw;
+	height: auto;
+	/* margin-bottom: 1vw; */
+}
+nav{
+	height: fit-content;
+	display: flex;
+}
+a{
+	margin-left: 5vw;
+    font-family: 'FiraGO';
+    font-style: normal;
+	font-weight: 700;
+	font-size: 1.5vw;
+	color: #8D81FF;
+	text-decoration: none;
+}
+.media{
+	height:3vw;
+	margin-right: 1vw;
+}
+.line{
+	height:3vw;
+	width:auto;
+	margin-right: 1vw;
+}
+section{
+	margin-top: 3vw;
+}
