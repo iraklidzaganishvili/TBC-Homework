@@ -1,0 +1,73 @@
+header{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+header > img{
+    margin-right: auto;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+header > div > a{
+    text-decoration: none;
+    margin:1vw;
+    color: #636060;
+    font-size: 1.0625rem;
+    font-family: Helvetica; 
+}
+#right{
+    margin-right: 5vw;
+}
+#banner{
+    width:100%;
+}
+section{
+    width:90%;
+    margin-left:50%;
+    transform: translate(-50%, 0%);
+    margin-top:5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+section > div{
+    width: 22%;
+    margin-left:3vw;
+}
+#head{
+    color: #010101;
+    font-size: 1.75rem;
+    font-family: Helvetica; 
+    margin-bottom: 1.5vw;
+    font-weight: bold;
+}
+.head{
+    color: #343232;
+    font-size: 1.1875rem;
+    font-family: Helvetica;
+    margin-top:1.5vw;
+}
+.body{
+    color: #636060;
+    font-size: 1.125rem;
+    font-family: Helvetica;
+    margin-bottom: 4vw;
+    margin-top:1vw;
+}
+#discover{
+    color: #636060;
+    font-size: 1.0625rem;
+    font-family: Helvetica;
+    margin-bottom: 0.5vw;
+}
+#uncool{
+    position: absolute;
+    left:0px;
+}
+#banner1{
+    width:100%;
+}
