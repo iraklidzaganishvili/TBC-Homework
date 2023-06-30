@@ -1,15 +1,32 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 header{
     width:100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 header > img{
     margin-right: auto;
     margin-left: 5vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
+    width:3vw;
 }
 header > div > a{
     text-decoration: none;
@@ -27,12 +44,22 @@ header > div > a{
 section{
     width:90%;
     margin-left:50%;
-    transform: translate(-50%, 0%);
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
     margin-top:5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 section > div{
     width: 22%;
@@ -70,4 +97,59 @@ section > div{
 }
 #banner1{
     width:100%;
+}
+#burger{
+    display: none;
+    width:2vw;
+}
+#imagetext{
+    position: absolute;
+}
+#imagetextholder{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+#imagetext1{
+    color: #FFF;
+    font-size: 4.9375rem;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+#imagetext2{
+    color: #FFF;
+    font-size: 1.1875rem;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+@media only screen and (max-width: 768px){
+    section{
+        flex-direction:column;
+    }
+    section > div{
+        width:100%;
+        margin-left:0px;
+        margin-bottom:5vw;
+    }
+    header > div{
+        display: none;
+    }
+    #burger{
+        display: inline-block;
+        margin-right: 5vw;
+    }
+    #uncool{
+        position: initial;
+    }
+    #imagetext1{
+        font-size: 4.9375vw;
+    }
+    #imagetext2{
+        font-size: 1.1875vw;
+    }
 }
