@@ -133,12 +133,6 @@ table {
   box-sizing: border-box;
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 header {
   width: 100%;
   display: flex;
@@ -160,19 +154,130 @@ header #burger {
   display: none;
   width: 2vw;
 }
-header div > a {
+header div a {
   text-decoration: none;
   margin: 1vw;
   color: #636060;
   font-size: 1.0625rem;
   font-family: Helvetica;
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   header div {
     display: none;
   }
   header #burger {
     display: inline-block;
     margin-right: 5vw;
+  }
+}
+
+#banner {
+  width: 100%;
+}
+
+#imagetextholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#imagetextholder #imagetext1 {
+  color: #FFF;
+  font-size: 4.9375rem;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#imagetextholder #imagetext2 {
+  color: #FFF;
+  font-size: 1.1875rem;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+#imagetextholder #imagetext {
+  position: absolute;
+}
+@media (max-width: 768px) {
+  #imagetextholder #imagetext1 {
+    font-size: 4.9375vw;
+  }
+  #imagetextholder #imagetext2 {
+    font-size: 1.1875vw;
+  }
+}
+
+section {
+  width: 90%;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+section div {
+  width: 22%;
+  margin-left: 3vw;
+}
+section #head {
+  color: #010101;
+  font-size: 1.75rem;
+  font-family: Helvetica;
+  margin-bottom: 1.5vw;
+  font-weight: bold;
+}
+section .head {
+  color: #343232;
+  font-size: 1.1875rem;
+  font-family: Helvetica;
+  margin-top: 1.5vw;
+}
+section .body {
+  color: #636060;
+  font-size: 1.125rem;
+  font-family: Helvetica;
+  margin-bottom: 4vw;
+  margin-top: 1vw;
+}
+section #discover {
+  color: #636060;
+  font-size: 1.0625rem;
+  font-family: Helvetica;
+  margin-bottom: 0.5vw;
+}
+section #uncool {
+  position: absolute;
+  left: 0px;
+}
+section #banner1 {
+  width: 100%;
+}
+section #imagetext {
+  position: absolute;
+}
+section #imagetextholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+  section div {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 5vw;
+  }
+  header div {
+    display: none;
+  }
+  #uncool {
+    position: initial;
   }
 }/*# sourceMappingURL=global.css.map */

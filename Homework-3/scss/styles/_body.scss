@@ -1,0 +1,38 @@
+#banner {
+    width: 100%;
+}
+#imagetextholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #imagetext1 {
+        color: #FFF;
+        font-size: 4.9375rem;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    
+    #imagetext2 {
+        color: #FFF;
+        font-size: 1.1875rem;
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+    #imagetext {
+        position: absolute;
+    }
+    @include breakpoint(mobile) {
+        #imagetext1 {
+            font-size: 4.9375vw;
+        }
+    
+        #imagetext2 {
+            font-size: 1.1875vw;
+        }
+    }
+}
