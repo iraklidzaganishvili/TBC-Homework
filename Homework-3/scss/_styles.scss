@@ -1,0 +1,46 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+header{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  img{
+    margin-right: auto;
+    margin-left: 5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    width:3vw;
+  }
+  #right{
+    margin-right: 5vw;
+  }
+  #burger{
+    display: none;
+    width:2vw;
+  }
+  div > a{
+    text-decoration: none;
+    margin:1vw;
+    color: #636060;
+    font-size: 1.0625rem;
+    font-family: Helvetica; 
+  }
+  @media only screen and (max-width: 768px){
+  div{
+      display: none;
+  }
+  #burger{
+      display: inline-block;
+      margin-right: 5vw;
+  }
+  }
+}
+
+
